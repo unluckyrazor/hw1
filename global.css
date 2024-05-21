@@ -1,0 +1,10 @@
+body {
+    font-family: 'Rubik', Courier, monospace;
+    background-color: ivory;
+    margin: 3vh 5vw;
+    line-height: normal;
+}
+
+a:visited{
+    color:black;
+}

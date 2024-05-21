@@ -1,0 +1,40 @@
+
+  label {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.1em;
+  }
+  form {
+    margin: 30px;
+  }
+  
+  #register_text{
+    font-style: bold;
+    font-size: larger;
+    margin-top : 30px;
+    text-align: center;
+  }
+
+
+
+  .register_container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .register_link_button{
+    
+    background-color: black;
+    font-size: 1.3rem ;
+    padding: 10px;
+    
+
+  }
+
+
+  #register_link_text{
+    color: white;
+    text-align: center;
+  }
