@@ -26,7 +26,7 @@ home page carica con api rest( js chiedee a php -> php chiede a db -> restituisc
 )
 fare pagine articoli e caricarle nel db(? una o piu? )
 
-
+pagine con contenuti caricati tramite api rest ( 3 pg min)
 
 
 
@@ -34,10 +34,11 @@ homepage interazione: o la ricerca di contenuto o una reading list di preferiti 
     se ci arrivo faccio i commenti agli articoli. se no la lista dei preferiti ma poi devo mettere la pagina per visualizzarli
 
 
+
 ricercare contenuti tramite api rest (es. spotify o igdb . vedremo. magari integro l'accesso con twitch)
 
 
-
+meglio js che ricaricamenti 
 
 
 

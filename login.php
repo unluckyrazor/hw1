@@ -1,5 +1,5 @@
 <?php 
-include('header.php');
+include('header.html');
 include('db_config.php');
 
 ini_set('display_errors', 1);
@@ -17,10 +17,11 @@ error_reporting(E_ALL);
     
 
     // se ha ricevuto username e pw dal form si connette al db e controlla che ci sia l'utente
-    // devo implementare l'anti injection
+    
     if(isset($_POST["username"])&&isset($_POST["password"])) {
 
         $conn = mysqli_connect($dbconfig['host'], $dbconfig['user'], $dbconfig['password'], $dbconfig['name']) or die(mysqli_error($conn)); 
+
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $password= mysqli_real_escape_string($conn, $_POST['password']);   
         //$username = $_POST['username'];
@@ -85,6 +86,6 @@ error_reporting(E_ALL);
 
 
 <?php
-include('footer.php'); 
+include('footer.html'); 
 ?>
 

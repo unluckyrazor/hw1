@@ -15,11 +15,15 @@ a:hover{
     
 }
 
+.im{
+    display: flex;
+    justify-content: center;
+}
+
 
 #im_header {
     width: 22vw;
-    display: block;
-    margin: auto
+    
 }
 
 img.left_article_image:hover, img.big_article_image_middle:hover, img.small_mid_img:hover, img.article_image_right:hover {
@@ -38,22 +42,20 @@ img{
 }
 
 #flexcontainer1nav {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3%;
+    
+    margin-top: 2%;
+    margin-bottom: 1%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 1%;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-bottom: 1%;
+    padding: 1% 20%;
+    
+    overflow:scroll;
     
 
 }
 
 #flexcontainer2nav {
-    display: flex;
-    justify-content: space-around;
+    
     padding-left: 5%;
     padding-right: 5%;
     
@@ -61,14 +63,15 @@ img{
 }
 
 .flexitemnav1 {
-    border-right: 1px solid black;
-    padding: 0% 1.5%;
+    border-right: 1px solid lightgray;
+    padding: 0% 2%;
     font-weight: bold;
+    overflow: scroll;
 
 }
 
 .flexitemnav2 {
-    border-right: 1px solid black;
+    border-right: 1px solid lightgray;
     
     padding:0% 7%;
 }

@@ -1,19 +1,32 @@
 function validation(event){
-    event.preventDefault();
+
+
+
+    //elementi per visualizzare errori 
+
+    const desc = document.createElement("div");
+    desc.style.textAlign='center';
+    const register_form = document.querySelector(".form");
+    register_form.appendChild(desc);         
+    //previeni il submit del form 
+    //event.preventDefault();
 
     function onJson(json){
         
-        //se username o email già esistono nel DB non submittare e mostra l'errore
+        //se username o email già esistono nel DB esce dalla funzione e mostra l'errore
         if (json.username_exists){
             desc.textContent="nome utente già in uso";
             console.log(json);
+            return;
+            
             
         }
         else if(json.email_exists){
-            desc.textContent="email già in uso";
-            
+            desc.textContent="email già in uso";            
             console.log(json);
+            return;
         }
+
         console.log(json);
         event.target.submit();
     
@@ -87,14 +100,6 @@ function validation(event){
 }
 
 
-
-
-//elementi per visualizzare errori 
-
-const desc = document.createElement("div");
-desc.style.textAlign='center';
-const register_form = document.querySelector(".form");
-register_form.appendChild(desc);         
 
 let tries=0;
 

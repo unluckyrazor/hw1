@@ -10,7 +10,7 @@
         header("Location: login.php");
         exit;
     }
-include('header.php');
+include('header.html');
 
 ?>
 
@@ -204,7 +204,7 @@ include('header.php');
 </body>
 
 <?php
-include('footer.php'); 
+include('footer.html'); 
 ?>
 
 

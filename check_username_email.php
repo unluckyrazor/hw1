@@ -11,12 +11,10 @@
             echo json.encode($response);
             exit;
         } 
-
+        
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $email= mysqli_real_escape_string($conn, $_POST['email']);
-        //$username = $_POST['username'];
-        //$email = $_POST['email'];
-
+        
 
 
         $query = "SELECT username FROM users
