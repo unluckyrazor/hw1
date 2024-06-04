@@ -177,6 +177,8 @@ p {
     width: 100%;
     border-radius: 5%;
     overflow: hidden;
+    display: inline-block;
+    position: relative;
 }
 
 .left_article_image {
@@ -200,6 +202,7 @@ p {
     margin-left: 3%;
     width: 45vw;
     
+    
 }
 
 #flex_item_article_middle {
@@ -214,6 +217,9 @@ p {
     height: 60%;
     overflow: hidden;
     border-radius: 5%;
+    display: inline-block;
+    position: relative;
+    
     
 }
 
@@ -252,6 +258,9 @@ p {
     height: 70%;
     overflow: hidden;
     border-radius: 5%;
+    display: inline-block;
+    position: relative;
+    
 
 }
 
@@ -297,6 +306,8 @@ p {
     height: 60%;
     overflow: hidden;
     border-radius: 5%;
+    display: inline-block;
+    position: relative;
 }
 
 
@@ -414,15 +425,15 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.star{
+.save{
     position: absolute;
-    width: 40px;
-    right: 27.7vw;
+    width: 30px;
+    right: 1.5vw;
+    display: inline;
+    z-index: 5;
 }
 
-.fav{
-    background-color: red;
-}
+
 
 .flex{
     display: flex;

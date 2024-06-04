@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <?php
 
     // avvia sess
@@ -12,10 +12,6 @@
     }
 include('header.html');
 
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 ?>
 
 <html>
@@ -27,7 +23,7 @@ error_reporting(E_ALL);
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
-    <title>hw1</title>
+    <title>mhw1</title>
     <script src="sito.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -45,26 +41,23 @@ error_reporting(E_ALL);
 
             <!-- left-->
             <div class="left_flex_cont">
-
                 <article class="left_flex_item_article"> 
                     <!-- image-->
                     <div class="left_image_container">
                         <a class="link" href="www.finalround.it_.png">
-                        <img class="left_article_image ai"
-                            src="imgs/mario.png"> 
+                        <img class="left_article_image"
+                            src="imgs/rabbia.jpeg">
                         <span class="tag"> ATTUALITA </span>
                         
                         </a>
-                        <img class="save" src="imgs/bookmark_blank.png">
-                        
                     </div>
                     
                     <!-- text-->
                         <a class="link" href="www.finalround.it_.png"> 
-                            <h1 id="sh1" class="side_header header" > test </h1> 
+                            <h1 class="side_header"> Altrimenti ci arrabbiamo </h1> 
                         </a>
-                        <p class="sottotitolo sbig"></p>
-                        <p class="autore abig">   </p>
+                        <p class="sottotitolo">Negli ultimi anni i videogiochi difficili sono diventati mainstream</p>
+                        <p class="autore"> di Alfio Rapisarda </p>
                 </article>
 
                 <article class="left_flex_item_article">
@@ -72,18 +65,16 @@ error_reporting(E_ALL);
                     
                     <div class="left_image_container">
                         <a class="link" href="www.finalround.it_.png">
-                        <img class="left_article_image ai" src="">
+                        <img class="left_article_image" src="imgs/mario.png">
                         <span class="tag"> RECENSIONE </span> 
                         </a>
-                        <img class="save" src="imgs/bookmark_blank.png">
-
                     </div>
                     
                     <!-- text-->
                         <a class="link" href="www.finalround.it_.png">
-                            <h1 id="sh2" class="side_header header" > </h1> </a>
-                    <p class="sottotitolo sbig"></p>
-                    <p class="autore abig">  </p>
+                            <h1 class="side_header"> Kizaru sta bluffando?</h1> </a>
+                    <p class="sottotitolo">Sappiamo che un giorno onepiece finirà...forse</p>
+                    <p class="autore"> di Simone Spasentino </p>
                 </article>
             </div>
 
@@ -98,18 +89,18 @@ error_reporting(E_ALL);
                 <article id="flex_item_article_middle" data-date="23/04/24">
                     <div class="big_mid_image_container">
                         <a class="link" href="www.finalround.it_.png">
-                             <img class="big_article_image_middle ai" src="">
+                             <img class="big_article_image_middle" src="imgs/college.png">
                              <span class="tag"> ANTEPRIMA </span> 
                         </a>
-                       <!-- <img class="arrow" src="imgs/white-arrow-transparent-png-22.png"> -->
-                        <img class="save" src="imgs/bookmark_blank.png">
+                        <img class="arrow" src="imgs/white-arrow-transparent-png-22.png">
+                        <img class="star" src="imgs/heart.png">
                     </div>
                         
                         <a class="link" href="www.finalround.it_.png">
-                            <h1 class="middle_article_header header"></h1> 
+                            <h1 class="middle_article_header"> Wise stickman vs instant gratification monkey</h1> 
                         </a>
-                    <p class="sottotitolo sbig"> </p>
-                    <p class="autore abig">  </p>
+                    <p class="sottotitolo"> Inside the mind of a master procrastinator</p>
+                    <p class="autore"> di Ennio Guelfo </p>
                         
                 </article>
 
@@ -121,7 +112,7 @@ error_reporting(E_ALL);
                 
 
 
-                <!-- small mid mostra -->
+
                 <div class="middle-flex-cont"> 
 
 
@@ -131,16 +122,15 @@ error_reporting(E_ALL);
                         <div class="mid_small_image_container">
 
                             <a class="link" href="www.finalround.it_.png"> 
-                            <img class="small_mid_img more_ai" src=""> <span class="tag"> RECENSIONE</span>
+                            <img class="small_mid_img" src="imgs/college.png"> <span class="tag"> a </span>
                             </a>
-                            <img class="save more_save" src="imgs/bookmark_blank.png">
                         </div>
 
                         <a class="link" href="www.finalround.it_.png">
-                            <h1 class="middle_article_header more_header"> </h1> 
+                            <h1 class="middle_article_header"> header</h1> 
                         </a>
-                            <p class="sottotitolo more_sottotitolo"> </p>
-                            <p class="autore more_autore"> </p>
+                            <p class="sottotitolo"> aaoisnfoai</p>
+                            <p class="autore"> di zio turi</p>
                     </article>
 
 
@@ -149,32 +139,31 @@ error_reporting(E_ALL);
                         <div class="mid_small_image_container">
 
                             <a class="link" href="www.finalround.it_.png"> 
-                            <img class="small_mid_img more_ai" src=""> <span class="tag"> ATTUALITA</span>
+                            <img class="small_mid_img" src="imgs/college.png"> <span class="tag"> a </span>
                             </a>
-                            <img class="save more_save" src="imgs/bookmark_blank.png">
                         </div>
 
                         <a class="link" href="www.finalround.it_.png">
-                            <h1 class="middle_article_header more_header"> </h1></a>
-                        <p class="sottotitolo more_sottotitolo"> </p>
-                        <p class="autore more_autore"> </p>
+                            <h1 class="middle_article_header"> tito</h1> </a>
+                        <p class="sottotitolo"> aaoisnfoai</p>
+                        <p class="autore"> di zio turi</p>
                     </article>
                 </div>
 
                 <!-- prova api-->
-                <div id="tracce"> Tracce più ascoltate da gamer come te: </div>
+                <div id="tracce"> Tracce random dalla categoria gaming di spotify belle fresche: </div>
 
                 <div class="flex_spoty_container"> 
-                    <div class="show_content"><img class="spoty_track_image" src="imgs/grey.png">
-                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name">Caricamento... </span></div></a>
-                    <div class="show_content"><img class="spoty_track_image" src="imgs/grey.png">
-                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> </span></div></a>
-                    <div class="show_content"><img class="spoty_track_image" src="imgs/grey.png">
-                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> </span></div></a>
-                    <div class="show_content"><img class="spoty_track_image" src="imgs/grey.png">
-                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> </span></div></a>
-                    <div class="show_content"><img class="spoty_track_image" src="imgs/grey.png">
-                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> </span></div></a>
+                    <div class="show_content"><img class="spoty_track_image" src="imgs/mario.png">
+                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> prova</span></div></a>
+                    <div class="show_content"><img class="spoty_track_image" src="imgs/mario.png">
+                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> prova</span></div></a>
+                    <div class="show_content"><img class="spoty_track_image" src="imgs/mario.png">
+                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> prova</span></div></a>
+                    <div class="show_content"><img class="spoty_track_image" src="imgs/mario.png">
+                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> prova</span></div></a>
+                    <div class="show_content"><img class="spoty_track_image" src="imgs/mario.png">
+                    <a class="spoty_track_link" href="www.finalround.it_.png"><span  class="track_name"> prova</span></div></a>
                     
                     
                     
@@ -197,15 +186,14 @@ error_reporting(E_ALL);
             <div id="right_flex_cont">
                 <article class="flex_item_article_right">
                     <div class="article_right_image_container">
-                        <a class="link" href="www.finalround.it_.png"> <img class="article_image_right ai" src="">
+                        <a class="link" href="www.finalround.it_.png"> <img class="article_image_right" src="imgs/bill.jpeg">
                         <span class="tag"> MONOGRAFIA </span> </a>
-                        <img class="save" src="imgs/bookmark_blank.png">
                     </div>
                     
                         <a class="link" href="www.finalround.it_.png">
-                            <h1 class="side_header header">a</h1> </a>
-                    <p class="sottotitolo sbig"> </p>
-                    <p class="autore abig">  </p>
+                            <h1 class="side_header">Bill clinton ed elden ring</h1> </a>
+                    <p class="sottotitolo"> Come l'ex-presidente ha salvato i videogiochi open-world</p>
+                    <p class="autore"> di Fabio Catanese </p>
                 </article>
             </div>
         </div>
@@ -222,5 +210,3 @@ include('footer.html');
 
 
 </html>
-
-

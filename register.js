@@ -58,7 +58,7 @@ function validation(event){
             // controllo che la pw rispetti i parametri se non lo fa non submitta
             const password=form.password.value;
             const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-
+        
             if(!passwordRegex.test(password)){
 
                 event.preventDefault();
