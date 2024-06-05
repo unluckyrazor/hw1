@@ -1,0 +1,45 @@
+
+
+.flex_container_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1%;
+
+
+
+    ;
+}
+
+
+#footer_info {
+
+    position: static;
+    top: 3%;
+    border-top: 2px solid black;
+    padding: 5px;
+    margin-top: 2%;
+}
+
+
+.flex_item_footer {
+
+    border-right: 1px solid black;
+    padding-right: 1.5%;
+    padding-left: 1%;
+    font-style: italic;
+}
+
+#footer_img {
+    width: 5vh;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+
+}
+
+
+#footer_final {
+    text-align: center;
+    
+}

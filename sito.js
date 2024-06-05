@@ -1,14 +1,10 @@
+/* discontinued
 function onHover() {
-    
-    
     
     const article = document.querySelector("#flex_item_article_middle");
     
     //prende la data segnata nell'articolo e la appende all'articolo
 
-    
-    
-    
     flex_item_article_middle.appendChild(date);
     date.textContent=article.dataset.date;
     header_middle.removeEventListener("mouseover", onHover);
@@ -24,6 +20,7 @@ function onLeave(){
 
 
 }
+*/
 /* discontinued
 function cambiaMidImage() {
     console.log("cliccato");
@@ -85,19 +82,24 @@ function aggiornaInfoMore(arrofarray){
     
 }
 
-let isBookmarked=false;
+
 
 
 function saveItem(event) {
-    if(!isBookmarked){
+    
     const bookmark= event.target;
     let article_id=bookmark.dataset.id;
+    const isBookmarked = bookmark.dataset.bookmarked === "true";
+
+    if(!isBookmarked){
     saveBookmarkFetch(article_id);
     bookmark.src="imgs/bookmark_black.png";
-    isBookmarked=true;
+    bookmark.dataset.bookmarked = "true"; 
     } else {
         console.log("unsaving");
         unsaveItem(event);
+        bookmark.dataset.bookmarked = "false";
+
     }
     
 
@@ -107,9 +109,10 @@ function saveItem(event) {
 function unsaveItem(event){
     const bookmark = event.target;
     let article_id=bookmark.dataset.id;
+
     saveBookmarkFetch(article_id);
     bookmark.src="imgs/bookmark_blank.png";
-    isBookmarked=false;
+    bookmark.dataset.bookmarked = "false";
 
 }
 
@@ -492,21 +495,30 @@ function aggiornaInfo(arrofarray){
     
     let i=0;
     
-    const read_later_arr = document.querySelectorAll(".save");
+    const read_later_arr = document.querySelectorAll(".savebig");
     const titles=document.querySelectorAll(".header");
     const smalls = document.querySelectorAll(".sbig");
     const authors = document.querySelectorAll(".abig");
     const img_paths = document.querySelectorAll(".ai");
+    const article_url = document.querySelectorAll(".text_link");
+    const article_url_imgs = document.querySelectorAll(".img_link");
+
     
 
     for (;load_index<titles.length;load_index++){
-        
+        //in questo ciclo occhio a chi si riempie prima coi selectors, 
+        //ci sono i due elementi nascosti e devi selezionare bene
 
         read_later_arr[i].dataset.id=arrofarray[load_index]['id'];
         titles[i].textContent=arrofarray[load_index]['article_title'];
         smalls[i].textContent=arrofarray[load_index]['article_small'];
         authors[i].textContent="di  " + arrofarray[load_index]['article_author'] ;
         img_paths[i].src=arrofarray[load_index]['image_path'];
+        article_url[i].href=arrofarray[load_index]['article_path'];
+        article_url_imgs[i].href=arrofarray[load_index]['article_path'];
+
+        
+
         read_later_arr[i].addEventListener("click", saveItem);
         checkBookmarkFetch(arrofarray[load_index]['id'], read_later_arr[i]);
 
@@ -590,5 +602,6 @@ function checkBookmarkFetch(article_id, toBookmark){
 
 function appearSaved(bookmark){
     bookmark.src="imgs/bookmark_black.png";
-    isBookmarked=true;
+    bookmark.dataset.bookmarked = "true";
+
 }

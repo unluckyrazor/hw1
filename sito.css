@@ -1,31 +1,9 @@
-body {
-    font-family: 'Rubik', Courier, monospace;
-    background-color: ivory;
-    margin: 3vh 5vw;
-    line-height: normal;
-}
 
-a:link {
-    color: black;
-    text-decoration: none;
-}
 
 a:hover{
    opacity: 0.6;
     
 }
-
-.im{
-    display: flex;
-    justify-content: center;
-}
-
-
-#im_header {
-    width: 22vw;
-    
-}
-
 img.left_article_image:hover, img.big_article_image_middle:hover, img.small_mid_img:hover, img.article_image_right:hover {
     opacity:0.8;
     transform: scale(1.2);
@@ -35,46 +13,6 @@ img{
     transition: transform 0.3s ease; 
 }
 
-
-
-#menu_button{
-    display: none;
-}
-
-#flexcontainer1nav {
-    
-    margin-top: 2%;
-    margin-bottom: 1%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 1% 20%;
-    
-    overflow:scroll;
-    
-
-}
-
-#flexcontainer2nav {
-    
-    padding-left: 5%;
-    padding-right: 5%;
-    
-    
-}
-
-.flexitemnav1 {
-    border-right: 1px solid lightgray;
-    padding: 0% 2%;
-    font-weight: bold;
-    overflow: scroll;
-
-}
-
-.flexitemnav2 {
-    border-right: 1px solid lightgray;
-    
-    padding:0% 7%;
-}
 
 
 
@@ -108,7 +46,7 @@ p {
     position: absolute;
     color: white;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 3px;
     bottom: 25px;
     right: 5px;
@@ -175,7 +113,7 @@ p {
 .left_image_container{
     height: 60%;
     width: 100%;
-    border-radius: 5%;
+    border-radius: 5px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -184,8 +122,8 @@ p {
 .left_article_image {
     height: 100%;
     width: 100%;
-    border-radius: 5%;
     
+    object-fit: cover;
     
 }
 
@@ -216,10 +154,11 @@ p {
     width: 100%;
     height: 60%;
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 5px;
     display: inline-block;
     position: relative;
     
+
     
 }
 
@@ -227,7 +166,7 @@ p {
 
     width: 100%;
     height: 100%;
-    
+    object-fit: cover;
     
 }
 
@@ -257,7 +196,7 @@ p {
     width: 100%;
     height: 70%;
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 5px;
     display: inline-block;
     position: relative;
     
@@ -267,8 +206,9 @@ p {
 .article_image_right {
     width: 100%;
     height: 100%;
-    border-radius: 5%;
     
+    object-fit: cover;
+
 }
 
 
@@ -297,6 +237,7 @@ p {
     margin: 0 2%;
     display: none;
     height: 50vh;
+    width: 50vw;
     border-bottom: 1px solid black;
 }
 
@@ -305,7 +246,7 @@ p {
     width: 100%;
     height: 60%;
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 5px;
     display: inline-block;
     position: relative;
 }
@@ -314,7 +255,8 @@ p {
 .small_mid_img{
     width: 100%;
     height: 100%;
-    
+    object-fit: cover;
+
 }
 
 
@@ -370,67 +312,12 @@ p {
 
 
 
-.flex_container_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1%;
-
-
-
-    ;
-}
-
-
-#footer_info {
-
-    position: static;
-    top: 3%;
-    border-top: 2px solid black;
-    padding: 5px;
-    margin-top: 2%;
-}
-
-
-.flex_item_footer {
-
-    border-right: 1px solid black;
-    padding-right: 1.5%;
-    padding-left: 1%;
-    font-style: italic;
-}
-
-#footer_img {
-    width: 5vh;
-    display: block;
-    margin: auto;
-    margin-top: 2%;
-
-}
-
-
-#footer_final {
-    text-align: center;
-    
-}
-
-.arrow{
-    width: 100px;
-    height: 100px;
-    z-index: 200;
-    border: 5px black;
-    position: absolute;
-    right: 27.7vw;
-    bottom: 35vh;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .save{
     position: absolute;
     width: 30px;
     right: 1.5vw;
     display: inline;
-    z-index: 5;
+    cursor: pointer;
 }
 
 
@@ -517,7 +404,7 @@ body {
 .left_image_container{
     height: 25vh;
     width: 100%;
-    border-radius: 5%;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -558,7 +445,7 @@ body {
     width: 100%;
     height: 25vh;
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 5px;
     position: relative;
     
 }
@@ -588,7 +475,7 @@ p {
     width: 100%;
     height: 25vh;
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 5px;
 
 }
 
