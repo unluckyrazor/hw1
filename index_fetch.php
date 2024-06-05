@@ -10,7 +10,6 @@ error_reporting(E_ALL);
     $query= "SELECT articles.id, image_path, article_title, article_small, article_author, article_path
      FROM articles JOIN article_images ON article_id=articles.id ORDER BY article_id";
     $result= mysqli_query($conn, $query) or die(mysqli_error($conn));
-    //devo fare fetch associate e prendermi il campo testo che mi interessa, jsonarlo, echo e lo mando a js che me lo mette
     $articles=array();
     
     if(!$result){
@@ -18,7 +17,7 @@ error_reporting(E_ALL);
         exit;
     }
     
- 
+    
 
 
     while($row=mysqli_fetch_assoc($result)){

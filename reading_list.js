@@ -201,13 +201,12 @@ function aggiornaLista(arrofarray){
         subtitle.textContent=arrofarray[i]['article_small'];
         author.textContent="di  " + arrofarray[i]['article_author'] ;
         articleImage.src=arrofarray[i]['image_path'];
-        textLink.href=arrofarray[i]['article_path'];
-        imageLink.href=arrofarray[i]['article_path'];
+        textLink.href='article.php?id=' + arrofarray[i]['id'];
+        imageLink.href='article.php?id=' + arrofarray[i]['id'];
         
         saveImage.dataset.bookmarked = "true";
         saveImage.addEventListener("click", saveItem);
-        //checkBookmarkFetch(arrofarray[i]['id'], saveImage);
-        //implementare il check
+        
         
 
 
@@ -230,7 +229,5 @@ lookForBookmarks();
 
 
 
-//devo mandare una richiesta che mi cerca tutte le robe 
-// su php mi cerca gli articoli salvati dall'utente, joina l'articolo con le altre robe e me le appende
 
 

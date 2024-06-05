@@ -74,7 +74,7 @@ richiesta get per l'articolo.  ????
 
 
 
-ricercare contenuti tramite api rest (es. spotify o igdb . vedremo. magari integro l'accesso con twitch) OK 
+api rest (es. spotify o igdb . vedremo. ) OK 
 
 
 meglio js che ricaricamenti 
