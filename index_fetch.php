@@ -28,7 +28,7 @@ error_reporting(E_ALL);
     mysqli_close($conn);
 
     if (!$articles) {
-        echo json_encode(["error" => "No record found"]);
+        echo json_encode(["error" => "non ho trovato niente"]);
         exit;
     }
 
